@@ -1,0 +1,37 @@
+.container {
+  --width: 1110px;
+
+  max-width: var(--width);
+  margin-inline: auto;
+
+  @media (width < 69.375rem) {
+    padding-inline: 2.5rem;
+  }
+
+  @media (width < 40em) {
+    padding-inline: 1rem;
+  }
+}
+
+.title-lg {
+  font-size: clamp(2.25rem, 1.81rem + 1.878vw, 3.5rem);
+  font-weight: var(--fw-bold);
+  color: var(--clr-black);
+}
+
+.title-md {
+  font-size: clamp(1.625rem, 1.172rem + 1.931vw, 2.5rem);
+  font-weight: var(--fw-bold);
+  color: var(--clr-black);
+}
+
+.title-sm {
+  font-size: clamp(1.5rem, 1.241rem + 1.103vw, 2rem);
+  font-weight: var(--fw-bold);
+  color: var(--clr-black);
+}
+
+.text-base {
+  font-size: clamp(1rem, 0.935rem + 0.276vw, 1.125rem);
+  line-height: 1.55;
+}

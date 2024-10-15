@@ -1,0 +1,29 @@
+:root {
+  /* 
+        Colors 
+     */
+  --clr-purple: #755cde;
+  --clr-orange: #f6a560;
+  --clr-pink: #f39e9e;
+  --clr-red: #eb7565;
+  --clr-teal: #61c4b7;
+  --clr-dark-purple: #552049;
+  --clr-black: #030303;
+  --clr-gray: #7a746e;
+  --clr-light-beige: #fff7f0;
+
+  /* 
+        Font Sizes
+      */
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 2rem;
+  --fs-xl: 2.5rem;
+  --fs-xxl: 3.5rem;
+
+  /* 
+        Font Weights
+      */
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
