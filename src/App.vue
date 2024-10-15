@@ -1,5 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Header from './components/Header.vue'
+import Skills from './components/Skills.vue'
+</script>
 
-<template>Hello world</template>
+<template>
+  <Header />
+  <main>
+    <Skills />
+  </main>
+</template>
 
-<style scoped></style>
+<style></style>

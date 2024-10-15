@@ -27,6 +27,7 @@ body {
   color: var(--clr-gray);
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   font-weight: var(--fw-medium);
+  padding-bottom: 200px; /* will remove */
 }
 
 a {
@@ -48,6 +49,11 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 p,
