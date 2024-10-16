@@ -19,5 +19,13 @@ a {
   &:hover {
     background-color: var(--clr-purple);
   }
+
+  &.altered {
+    background-color: var(--clr-red);
+
+    &:hover {
+      background-color: var(--clr-orange);
+    }
+  }
 }
 </style>
