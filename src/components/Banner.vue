@@ -35,6 +35,7 @@
   .text-base {
     margin-inline: auto;
     line-height: 26px;
+    max-width: 53ch;
 
     @media (max-width: 64rem) {
       text-wrap: pretty;
