@@ -111,6 +111,10 @@ function slideChange(direction: Direction): void {
     overflow: hidden;
     width: 1440px;
 
+    @media (max-width: 64rem) {
+      width: 100%;
+    }
+
     @media (max-width: 40rem) {
       width: 100%;
     }
