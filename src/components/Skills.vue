@@ -14,7 +14,7 @@ import { skills } from '../lib/constants'
         >
           <img
             :src="skill.image"
-            :alt="skill.title"
+            alt=""
             :width="skill.width"
             :height="skill.height"
           />
