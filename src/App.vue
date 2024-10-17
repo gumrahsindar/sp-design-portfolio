@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import AboutMe from './components/AboutMe.vue'
-import Header from './components/Header.vue'
+import ContactMe from './components/ContactMe.vue'
+import MyWork from './components/MyWork.vue'
+import SiteLayout from './components/SiteLayout.vue'
 import Skills from './components/Skills.vue'
 </script>
 
 <template>
-  <Header />
-  <main>
+  <SiteLayout>
     <Skills />
     <AboutMe />
-  </main>
+    <MyWork />
+    <ContactMe />
+  </SiteLayout>
 </template>
-
-<style></style>
