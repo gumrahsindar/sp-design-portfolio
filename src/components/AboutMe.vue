@@ -4,12 +4,12 @@ import AmyImage from '../assets/images/image-amy.webp'
 </script>
 
 <template>
-  <section id="about-me">
+  <section id="about-me" aria-labelledby="heading-aboutme">
     <div class="container">
       <div class="wrapper">
         <img class="image" :src="AmyImage" alt="Amy" width="445" height="445" />
         <div class="content">
-          <h2 class="title-md">
+          <h2 class="title-md" id="heading-aboutme">
             I’m Amy, and I’d love to work on your next project
           </h2>
           <p class="text-base">
