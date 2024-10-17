@@ -3,12 +3,12 @@ import Button from './Button.vue'
 </script>
 
 <template>
-  <section id="contact-me">
+  <section id="contact-me" aria-labelledby="contact-me-title">
     <div class="container">
       <div class="contact-wrapper">
         <div class="flex-container">
           <div class="flex-item">
-            <h2 class="title-md">Book a call with me</h2>
+            <h2 class="title-md" id="contact-me-title">Book a call with me</h2>
             <p class="text-base">
               I’d love to have a chat to see how I can help you. The best first
               step is for us to discuss your project during a free consultation.
