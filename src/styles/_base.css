@@ -20,6 +20,11 @@
   margin: 0;
 }
 
+*:focus-visible {
+  outline: 2px solid var(--clr-purple);
+  outline-offset: 2px;
+}
+
 body {
   line-height: 1.25;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +32,7 @@ body {
   color: var(--clr-gray);
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   font-weight: var(--fw-medium);
-  padding-bottom: 200px; /* will remove */
+  overflow-x: hidden;
 }
 
 a {
@@ -70,4 +75,16 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
