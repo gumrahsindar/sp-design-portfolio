@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <a href="#">Free Consultation</a>
+  <a aria-label="Contact Amy to start a project" href="#">Free Consultation</a>
 </template>
 
 <style scoped>
@@ -15,6 +15,7 @@ a {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-wrap: nowrap;
 
   &:hover {
     background-color: var(--clr-purple);

@@ -4,7 +4,7 @@ import Logo from '../assets/images/logo.svg'
 
 <template>
   <a href="/">
-    <img :src="Logo" alt="Logo" width="64" height="64" />
+    <img :src="Logo" alt="Amy's portfolio page logo" width="64" height="64" />
   </a>
 </template>
 
