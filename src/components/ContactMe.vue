@@ -1,5 +1,26 @@
 <script setup lang="ts">
 import Button from './Button.vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { onMounted } from 'vue'
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: '#contact-me',
+        start: 'top 80%',
+      },
+    })
+    .from('.contact-wrapper', {
+      duration: 1,
+      scale: 0,
+      opacity: 0,
+      ease: 'circ',
+    })
+})
 </script>
 
 <template>

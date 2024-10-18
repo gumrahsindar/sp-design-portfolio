@@ -9,6 +9,28 @@ import emblaCarouselVue from 'embla-carousel-vue'
 import { EmblaOptionsType } from 'embla-carousel'
 import SlideButton from './SlideButton.vue'
 
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { onMounted } from 'vue'
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: '#my-work',
+        start: 'top 90%',
+      },
+    })
+    .from('#my-work', {
+      duration: 1,
+      scale: 0,
+      opacity: 0,
+      ease: 'circ',
+    })
+})
+
 const options: EmblaOptionsType = {
   loop: true,
   align: 'center',

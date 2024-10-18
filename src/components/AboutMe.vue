@@ -1,15 +1,22 @@
 <script setup lang="ts">
 import Button from './Button.vue'
 import AmyImage from '../assets/images/image-amy.webp'
-import gsap from 'gsap'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { onMounted } from 'vue'
+
+gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
   gsap
-    .timeline()
+    .timeline({
+      scrollTrigger: {
+        trigger: '#about-me',
+        start: 'top 80%',
+      },
+    })
     .from('.image', {
       duration: 1,
-      delay: 1.5,
       scale: 0,
       opacity: 0,
       ease: 'back',
