@@ -35,6 +35,10 @@ import Button from './Button.vue'
     padding: 56px 75px 64px 75px;
   }
 
+  @media (max-width: 40rem) {
+    padding: 48px 24px;
+  }
+
   .flex-container {
     color: var(--clr-light-beige);
     display: flex;

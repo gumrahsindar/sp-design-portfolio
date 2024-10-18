@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import ImageSlide1 from '../assets/images/image-slide-1.jpg'
 import ImageSlide2 from '../assets/images/image-slide-2.jpg'
 import ImageSlide3 from '../assets/images/image-slide-3.jpg'
@@ -7,7 +6,7 @@ import ImageSlide4 from '../assets/images/image-slide-4.jpg'
 import ImageSlide5 from '../assets/images/image-slide-5.jpg'
 
 import emblaCarouselVue from 'embla-carousel-vue'
-import { EmblaOptionsType, EmblaCarouselType } from 'embla-carousel'
+import { EmblaOptionsType } from 'embla-carousel'
 import SlideButton from './SlideButton.vue'
 
 const options: EmblaOptionsType = {
@@ -17,16 +16,6 @@ const options: EmblaOptionsType = {
 }
 
 const [emblaRef, emblaApi] = emblaCarouselVue(options)
-
-function logSlidesInView(emblaApi: EmblaCarouselType): void {
-  console.log(emblaApi.scrollSnapList())
-}
-
-onMounted(() => {
-  if (emblaApi.value) {
-    emblaApi.value.on('slidesInView', logSlidesInView) // Access API
-  }
-})
 
 type Direction = 'previous' | 'next'
 
