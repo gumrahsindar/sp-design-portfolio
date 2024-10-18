@@ -25,7 +25,7 @@ onMounted(() => {
       '.content h2',
       {
         duration: 1,
-        x: 100,
+        xPercent: 100,
         opacity: 0,
         ease: 'back',
       },
@@ -35,7 +35,7 @@ onMounted(() => {
       '.content p',
       {
         duration: 1,
-        x: 100,
+        xPercent: 100,
         opacity: 0,
         ease: 'back',
       },
@@ -45,7 +45,7 @@ onMounted(() => {
       '.content .altered',
       {
         duration: 1,
-        x: 100,
+        xPercent: 100,
         opacity: 0,
         ease: 'back',
       },
@@ -77,6 +77,7 @@ onMounted(() => {
 
 <style scoped>
 .wrapper {
+  overflow-x: hidden;
   position: relative;
   display: grid;
   justify-items: center;
