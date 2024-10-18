@@ -20,7 +20,7 @@ onMounted(() => {
     .timeline({
       scrollTrigger: {
         trigger: '#my-work',
-        start: 'top 90%',
+        start: 'top 130%',
       },
     })
     .from('#my-work', {
