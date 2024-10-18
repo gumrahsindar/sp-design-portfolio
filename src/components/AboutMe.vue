@@ -1,6 +1,50 @@
 <script setup lang="ts">
 import Button from './Button.vue'
 import AmyImage from '../assets/images/image-amy.webp'
+import gsap from 'gsap'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  gsap
+    .timeline()
+    .from('.image', {
+      duration: 1,
+      delay: 1.5,
+      scale: 0,
+      opacity: 0,
+      ease: 'back',
+    })
+    .from(
+      '.content h2',
+      {
+        duration: 1,
+        x: 100,
+        opacity: 0,
+        ease: 'back',
+      },
+      '-=0.5'
+    )
+    .from(
+      '.content p',
+      {
+        duration: 1,
+        x: 100,
+        opacity: 0,
+        ease: 'back',
+      },
+      '-=0.5'
+    )
+    .from(
+      '.content .altered',
+      {
+        duration: 1,
+        x: 100,
+        opacity: 0,
+        ease: 'back',
+      },
+      '-=0.5'
+    )
+})
 </script>
 
 <template>

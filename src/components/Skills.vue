@@ -1,5 +1,20 @@
 <script setup lang="ts">
 import { skills } from '../lib/constants'
+import { onMounted } from 'vue'
+import gsap from 'gsap'
+
+onMounted(() => {
+  gsap.from('.skills-grid-item', {
+    duration: 1,
+    scale: 0,
+    opacity: 0,
+    ease: 'back',
+    stagger: {
+      from: 'random',
+      amount: 0.5,
+    },
+  })
+})
 </script>
 
 <template>
@@ -9,8 +24,9 @@ import { skills } from '../lib/constants'
         <li
           class="skills-grid-item"
           :class="skill.class"
-          v-for="skill in skills"
+          v-for="(skill, index) in skills"
           :key="skill.title"
+          :data-index="index"
         >
           <img
             :src="skill.image"
