@@ -19,7 +19,7 @@ onMounted(() => {
       duration: 1,
       scale: 0,
       opacity: 0,
-      ease: 'back',
+      ease: 'circ',
     })
     .from(
       '.content h2',
