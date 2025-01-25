@@ -1,4 +1,4 @@
-# Equalizer Landing Page
+# SP Design Portfolio Page
 
 ## 🚀 Features
 
