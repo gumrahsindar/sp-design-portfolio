@@ -11,6 +11,7 @@
 - **Vue JS**: Progressive JavaScript framework for building modern web applications.
 - **TypeScript**: For type-safe development.
 - **GSAP**: JS Animation library.
+- **Embla Carousel**: Lightweight carousel library with fluid motion and great swipe precision.
 
 ## 🌐 Live Demo
 
